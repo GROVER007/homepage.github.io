@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #fffce8;
+}
+
+a{
+    text-decoration: none;
+    color: #fffce8;
+    font-size: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+header{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #fffce8;
+    background-image: url(images/Hexagon.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 4%;
+}
+
+.main_container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    background-image: url(images/hp_bg.svg);
+    background-size: cover;
+}
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 770px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e363f;
+    border-radius: 20%;
+    border: solid 5px #b8b42d ;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+footer{
+    color: #fffce8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e363f;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 479px){ 
+    
+    h1{
+        font-size: 1.8rem;
+    }
+    header{
+        font-size: 2rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+
+    .frame{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+ }
